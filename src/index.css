@@ -1,13 +1,152 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.vertical-menu {
+  width: 200px;
+  margin: 25px 10px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.Admin{
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+
+.Admin h1{
+  font-size: 30px;
+}
+
+.create-assignment h1{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.create-assignment h2{
+  font-size: 30px;
+  padding: 0 30px;
+}
+
+
+.create-assignment select{
+  width: 20%;
+  margin: 5px 0;
+  border: none;
+  border: 1.5px solid rgb(3, 3, 3);
+  outline: none;
+}
+
+.btn{
+  text-align: center;
+}
+.btn button{
+  /* margin: 0 2px; */
+  border: 1.5px solid black;
+  padding: 0 80px;
+  border-radius: 2px ;
+}
+
+.filter{
+  transform: rotate(90deg);
+  width: 40px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+form select,
+form input{
+  width: 20%;
+  margin: 5px 0;
+  border: none;
+  border: 1.5px solid rgb(3, 3, 3);
+  outline: none;
+}
+
+.form-btn{
+  width: 30%;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1.5px solid black;
+  color: black;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+
+table.scrolldown {
+  width: 100%;
+  margin-top: 20px;
+  /* border-collapse: collapse; */
+  border-spacing: 0;
+  border: 2px solid black;
+}
+
+.due-report h2{
+text-decoration: underline;
+margin-top: 3px;
+}
+
+/* To display the block as level element */
+table.scrolldown tbody, table.scrolldown thead {
+  display: block;
+} 
+
+thead tr th {
+  height: 40px; 
+  line-height: 40px;
+}
+
+table.scrolldown tbody {
+    
+  
+  height: 50px; 
+  overflow: auto;
+  /* overflow-y: auto;
+
+  overflow-x: hidden;  */
+}
+
+tbody { 
+  border-top: 2px solid black;
+}
+
+tbody .spn {
+  /* backgroundColor:'yellow',padding:'2px 5px',margin:'2px 0' */
+  background-color: yellow;
+  padding: 2px 5px;
+  margin: 2px 0;
+}
+
+tbody td, thead th {
+  width : 200px;
+  border-right: 2px solid black;
+}
+td {
+  text-align:center;
 }
